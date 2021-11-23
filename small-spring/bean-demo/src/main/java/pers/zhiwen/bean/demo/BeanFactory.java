@@ -1,4 +1,4 @@
-package com.example.beandemo;
+package pers.zhiwen.bean.demo;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
