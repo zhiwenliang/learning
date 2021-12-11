@@ -1,4 +1,4 @@
-from typing import List
+from typing import Dict, List
 
 
 class Solution:
@@ -12,16 +12,16 @@ class Solution:
 
 class Solution1:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hash = {}
+        hashtable = dict()
         for i in range(len(nums)):
-            if target - nums[i] in hash.keys():
-                return [hash.get(target - nums[i]), i]
-            hash[nums[i]] = i
+            if target - nums[i] in hashtable.keys():
+                return [hashtable.get(target - nums[i]), i]
+            hashtable[nums[i]] = i
         return []
 
 
 # test case
 nums = [2, 2, 11, 15]
-target = 9
+target = 4
 s = Solution1()
 print(s.twoSum(nums, target))

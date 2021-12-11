@@ -17,5 +17,8 @@ public class ApiTest {
 
         UserService userService = (UserService) beanFactory.getBean("UserService");
         userService.queryUserInfo();
+
+        UserService userService_singleton = (UserService) beanFactory.getBean("UserService");
+        userService_singleton.queryUserInfo();
     }
 }
