@@ -7,7 +7,7 @@ import per.zhiwen.springframework.bean.factory.config.BeanDefinition;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry {
+public class DefaultListableBeanFactory extends AbstractAutowiredCapableBeanFactory implements BeanDefinitionRegistry {
     private Map<String, BeanDefinition> beanDefinitionMap = new HashMap<>();
 
     @Override
@@ -21,5 +21,10 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
         if (beanDefinition == null)
             throw new BeansException("No bean named '" + beanName + "' is defined.");
         return beanDefinition;
+    }
+
+    @Override
+    public Object getBean(String name, Object... args) throws BeansException {
+        return null;
     }
 }
