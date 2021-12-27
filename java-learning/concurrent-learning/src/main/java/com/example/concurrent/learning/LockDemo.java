@@ -1,4 +1,4 @@
-package com.example.concurrent.learning.aqs;
+package com.example.concurrent.learning;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
