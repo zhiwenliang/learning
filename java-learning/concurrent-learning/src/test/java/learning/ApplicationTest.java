@@ -1,5 +1,8 @@
-package com.example.concurrent.learning;
+package java.learning;
 
+import com.example.concurrent.learning.Thread1;
+import com.example.concurrent.learning.Thread2;
+import com.example.concurrent.learning.Thread3;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.FutureTask;
@@ -23,5 +26,6 @@ public class ApplicationTest {
 
         ThreadPoolExecutor pool = new ThreadPoolExecutor(8, 8, 60 * 60, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
         pool.execute(new Thread1());
+        System.out.println("asd");
     }
 }
