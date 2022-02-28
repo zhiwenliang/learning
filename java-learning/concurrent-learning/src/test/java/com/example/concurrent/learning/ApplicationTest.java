@@ -1,14 +1,11 @@
-package java.learning;
-
-import com.example.concurrent.learning.Thread1;
-import com.example.concurrent.learning.Thread2;
-import com.example.concurrent.learning.Thread3;
-import org.junit.jupiter.api.Test;
+package com.example.concurrent.learning;
 
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+
+import org.junit.jupiter.api.Test;
 
 public class ApplicationTest {
 

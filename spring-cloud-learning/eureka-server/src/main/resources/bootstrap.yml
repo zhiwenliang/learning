@@ -1,0 +1,17 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://127.0.0.1:7777/eureka/
+  instance:
+    hostname: ${EUREKA_ZONE_HOST:localhost}
+  server:
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 60000
+
