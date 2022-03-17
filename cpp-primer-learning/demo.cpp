@@ -1,7 +1,12 @@
 #include<iostream>
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main() {
-    cout << "hello";
-    return 0;
+    int a = 12, b , c;
+    b = a++;
+    c = ++a;
+    cout << b << endl;
+    cout << c << endl;
+    return 0; 
 }
