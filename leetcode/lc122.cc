@@ -1,10 +1,7 @@
 #include <iostream>
 #include <vector>
 
-using std::cout;
-using std::endl;
-using std::max;
-using std::vector;
+using namespace std;
 
 /**
  * @brief Dynamic Programming

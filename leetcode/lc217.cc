@@ -2,11 +2,7 @@
 #include <vector>
 #include <unordered_set>
 
-using std::cout;
-using std::endl;
-using std::vector;
-using std::unordered_set;
-
+using namespace std;
 
 class Solution
 {
