@@ -1,2 +1,3 @@
 #!/bin/bash
-rm -rf ./*.out
+find . -name '*.out' -type f -print -exec rm -rf {} \;
+
